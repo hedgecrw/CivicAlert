@@ -35,4 +35,7 @@ fp-info-cache
 
 # Dependencies files
 dependencies.lock
+
+# Managed components
 node_modules/
+managed_components/
