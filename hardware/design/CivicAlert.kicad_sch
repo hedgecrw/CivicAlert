@@ -1,0 +1,224 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "3dbd3de8-ad8a-405d-8846-2fd4fec89053")
+	(paper "USLetter")
+	(title_block
+		(title "CivicAlert")
+		(rev "A")
+		(company "Vanderbilt University")
+	)
+	(lib_symbols)
+	(text "CivicAlert"
+		(exclude_from_sim no)
+		(at 211.836 180.594 0)
+		(effects
+			(font
+				(size 6.35 6.35)
+			)
+		)
+		(uuid "c03b544c-b415-4ab8-af34-3f57c0685fca")
+	)
+	(sheet
+		(at 43.18 45.72)
+		(size 36.83 54.61)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "282c20fb-eeea-48b9-9334-ff1dc15ac570")
+		(property "Sheetname" "Audio + WiFi + BLE"
+			(at 43.18 45.0084 0)
+			(show_name yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "acoustic_mcu.kicad_sch"
+			(at 43.18 100.9146 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "CivicAlert"
+				(path "/3dbd3de8-ad8a-405d-8846-2fd4fec89053"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 148.59 45.72)
+		(size 36.83 54.61)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "3e7fdbc8-b14e-470b-8e86-6d127cbb5760")
+		(property "Sheetname" "GPS"
+			(at 148.59 45.0084 0)
+			(show_name yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "gps.kicad_sch"
+			(at 148.59 100.9146 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "CivicAlert"
+				(path "/3dbd3de8-ad8a-405d-8846-2fd4fec89053"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 43.18 115.57)
+		(size 36.83 54.61)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "6e34966e-7af6-478b-ab27-6fe42694dcb3")
+		(property "Sheetname" "Raspberry Pi"
+			(at 43.18 114.8584 0)
+			(show_name yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "rpi.kicad_sch"
+			(at 43.18 170.7646 0)
+			(show_name yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "CivicAlert"
+				(path "/3dbd3de8-ad8a-405d-8846-2fd4fec89053"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 199.39 45.72)
+		(size 36.83 54.61)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "efa39e3a-a35c-4011-80b6-ea9f4ffa9cdc")
+		(property "Sheetname" "Power"
+			(at 199.39 45.0084 0)
+			(show_name yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "power.kicad_sch"
+			(at 199.39 100.9146 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "CivicAlert"
+				(path "/3dbd3de8-ad8a-405d-8846-2fd4fec89053"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 96.52 45.72)
+		(size 36.83 54.61)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "f9c285a4-e3d7-4768-980c-918c1c5c8e1e")
+		(property "Sheetname" "Flashing + USB"
+			(at 96.52 45.0084 0)
+			(show_name yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "usb_flashing.kicad_sch"
+			(at 96.52 100.9146 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "CivicAlert"
+				(path "/3dbd3de8-ad8a-405d-8846-2fd4fec89053"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+)

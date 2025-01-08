@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP NCP133AMXADJTCG
+D ON Semiconductor NCP133AMXADJTCG, LDO Voltage Regulator Controller, 1A Adjustable, 0.8  3.6 V, +/-1.5% 6-Pin, XDFN
+K
+F http://www.onsemi.com/pub/Collateral/NCP133-D.PDF
+$ENDCMP
+#
+#End Doc Library
