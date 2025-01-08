@@ -10,20 +10,23 @@
 		(company "Vanderbilt University")
 	)
 	(lib_symbols
-		(symbol "CustomLibrary:Pogo_Pin"
-			(exclude_from_sim no)
-			(in_bom yes)
+		(symbol "Mechanical:MountingHole_Pad"
+			(pin_numbers hide)
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim yes)
+			(in_bom no)
 			(on_board yes)
-			(property "Reference" "P"
-				(at 0 0 0)
+			(property "Reference" "H"
+				(at 0 6.35 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" ""
-				(at 0 0 0)
+			(property "Value" "MountingHole_Pad"
+				(at 0 4.445 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -39,7 +42,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" ""
+			(property "Datasheet" "~"
 				(at 0 0 0)
 				(effects
 					(font
@@ -48,7 +51,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" ""
+			(property "Description" "Mounting Hole with connection"
 				(at 0 0 0)
 				(effects
 					(font
@@ -57,21 +60,52 @@
 					(hide yes)
 				)
 			)
-			(symbol "Pogo_Pin_1_0"
-				(pin bidirectional line
-					(at 2.54 1.27 180)
-					(length 5.08)
-					(name "Pogo"
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*Pad*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MountingHole_Pad_0_1"
+				(circle
+					(center 0 1.27)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "MountingHole_Pad_1_1"
+				(pin input line
+					(at 0 -2.54 90)
+					(length 2.54)
+					(name "1"
 						(effects
 							(font
-								(size 1.016 1.016)
+								(size 1.27 1.27)
 							)
 						)
 					)
 					(number "1"
 						(effects
 							(font
-								(size 1.016 1.016)
+								(size 1.27 1.27)
 							)
 						)
 					)
@@ -1234,7 +1268,7 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 175.26) (xy 81.28 175.26)
+			(xy 85.09 181.61) (xy 88.9 181.61)
 		)
 		(stroke
 			(width 0)
@@ -1314,7 +1348,7 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 172.72) (xy 81.28 172.72)
+			(xy 85.09 173.99) (xy 88.9 173.99)
 		)
 		(stroke
 			(width 0)
@@ -1456,7 +1490,7 @@
 	)
 	(rectangle
 		(start 49.53 158.75)
-		(end 118.11 187.96)
+		(end 118.11 193.04)
 		(stroke
 			(width 0)
 			(type default)
@@ -1488,7 +1522,7 @@
 	)
 	(text "USB VBUS and 5V rails are directly connected on RPi Zero 2W,\nso no need to add pogo connectors for VBUS or GND"
 		(exclude_from_sim no)
-		(at 83.312 182.88 0)
+		(at 83.312 189.738 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1518,7 +1552,7 @@
 	)
 	(global_label "ESP32_USB_D-"
 		(shape bidirectional)
-		(at 81.28 172.72 0)
+		(at 88.9 173.99 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1528,7 +1562,7 @@
 		)
 		(uuid "3ec9af0e-e56a-4ca2-aae2-a19c42568208")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 100.0116 172.72 0)
+			(at 107.6316 173.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1562,7 +1596,7 @@
 	)
 	(global_label "ESP32_USB_D+"
 		(shape bidirectional)
-		(at 81.28 175.26 0)
+		(at 88.9 181.61 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1572,7 +1606,7 @@
 		)
 		(uuid "975c5a5a-1a8e-4dbe-ab63-b3741fbe3680")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 100.0116 175.26 0)
+			(at 107.6316 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1627,41 +1661,32 @@
 		)
 	)
 	(symbol
-		(lib_id "CustomLibrary:Pogo_Pin")
-		(at 74.93 173.99 0)
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 82.55 181.61 90)
 		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
+		(exclude_from_sim yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
-		(uuid "2e1ced78-93ea-44b8-9063-fbd4dd2bacad")
-		(property "Reference" "P1"
-			(at 74.676 173.99 0)
+		(uuid "6992062d-c05c-47e3-99fa-032967db6c9d")
+		(property "Reference" "H2"
+			(at 81.28 178.308 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "~"
-			(at 72.39 171.45 0)
+		(property "Value" "MountingHole_Pad"
+			(at 70.104 181.864 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 74.93 173.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 74.93 173.99 0)
+		(property "Footprint" "Connector_PinHeader_2.00mm:PinHeader_1x01_P2.00mm_Vertical"
+			(at 82.55 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1669,8 +1694,17 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 74.93 173.99 0)
+		(property "Datasheet" "~"
+			(at 82.55 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 82.55 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1679,76 +1713,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "aca547bc-3193-410f-95b6-730378009b52")
+			(uuid "0b76799d-6b45-4fa1-bd86-7cd347496a59")
 		)
 		(instances
-			(project ""
+			(project "CivicAlert"
 				(path "/3dbd3de8-ad8a-405d-8846-2fd4fec89053/6e34966e-7af6-478b-ab27-6fe42694dcb3"
-					(reference "P1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "CustomLibrary:Pogo_Pin")
-		(at 74.93 176.53 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "4f633f54-f9df-4c8b-ada3-185a9b5d1a1a")
-		(property "Reference" "P2"
-			(at 74.676 176.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "~"
-			(at 72.39 173.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 74.93 176.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 74.93 176.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 74.93 176.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "c9138fcf-f4ba-44fb-8b77-b448abee25c5")
-		)
-		(instances
-			(project ""
-				(path "/3dbd3de8-ad8a-405d-8846-2fd4fec89053/6e34966e-7af6-478b-ab27-6fe42694dcb3"
-					(reference "P2")
+					(reference "H2")
 					(unit 1)
 				)
 			)
@@ -1821,6 +1791,70 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 82.55 173.99 90)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "c1afd7d2-2986-4984-95ff-70d1ba147f22")
+		(property "Reference" "H1"
+			(at 81.28 170.688 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 70.104 174.244 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.00mm:PinHeader_1x01_P2.00mm_Vertical"
+			(at 82.55 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 82.55 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 82.55 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e5534ead-6e1b-48a7-81f2-7d242d361017")
+		)
+		(instances
+			(project ""
+				(path "/3dbd3de8-ad8a-405d-8846-2fd4fec89053/6e34966e-7af6-478b-ab27-6fe42694dcb3"
+					(reference "H1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "RASPBERRY_PI_ZERO_2_W:RASPBERRY_PI_ZERO_2_W")
 		(at 74.93 96.52 0)
 		(unit 1)
@@ -1846,7 +1880,7 @@
 				)
 			)
 		)
-		(property "Footprint" "RASPBERRY_PI_ZERO_2_W:MODULE_RASPBERRY_PI_ZERO_2_W"
+		(property "Footprint" "RASPBERRY_PI_ZERO_2_W:Raspberry Pi Zero 2W Header"
 			(at 74.93 96.52 0)
 			(effects
 				(font
